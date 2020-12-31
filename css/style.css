@@ -122,83 +122,83 @@ h6 {
 .bg-AppStore {
   width: 89px;
   height: 30px;
-  background: url("../img/sprites/css_sprites.png") -10px -58px;
+  background: url("../img/sprites/css_sprites.webp") -10px -58px;
 }
 
 .bg-arrow {
   width: 12px;
   height: 7px;
-  background: url("../img/sprites/css_sprites.png") -216px -49px;
+  background: url("../img/sprites/css_sprites.webp") -216px -49px;
 }
 
 .bg-BCH {
   width: 29px;
   height: 29px;
-  background: url("../img/sprites/css_sprites.png") -126px -10px;
+  background: url("../img/sprites/css_sprites.webp") -126px -10px;
 }
 
 .bg-BinanceLogo {
   width: 18px;
   height: 18px;
-  background: url("../img/sprites/css_sprites.png") -175px -87px;
+  background: url("../img/sprites/css_sprites.webp") -175px -87px;
 }
 
 .bg-BTC {
   width: 29px;
   height: 29px;
-  background: url("../img/sprites/css_sprites.png") -126px -59px;
+  background: url("../img/sprites/css_sprites.webp") -126px -59px;
 }
 
 .bg-CoinBaseLogo {
   width: 21px;
   height: 20px;
   border-radius: 50%;
-  background: url("../img/sprites/css_sprites.png") -175px -10px;
+  background: url("../img/sprites/css_sprites.webp") -175px -10px;
 }
 
 .bg-ETH {
   width: 29px;
   height: 29px;
-  background: url("../img/sprites/css_sprites.png") -10px -108px;
+  background: url("../img/sprites/css_sprites.webp") -10px -108px;
 }
 
 .bg-GooglePlay {
   width: 96px;
   height: 28px;
   margin-left: 8px;
-  background: url("../img/sprites/css_sprites.png") -10px -10px;
+  background: url("../img/sprites/css_sprites.webp") -10px -10px;
 }
 
 .bg-HuobiLogo {
   width: 12px;
   height: 19px;
   margin-left: 3px;
-  background: url("../img/sprites/css_sprites.png") -216px -10px;
+  background: url("../img/sprites/css_sprites.webp") -216px -10px;
 }
 
 .bg-LTC {
   width: 29px;
   height: 29px;
-  background: url("../img/sprites/css_sprites.png") -59px -108px;
+  background: url("../img/sprites/css_sprites.webp") -59px -108px;
 }
 
 .bg-telegram {
   width: 19px;
   height: 17px;
-  background: url("../img/sprites/css_sprites.png") -10px -157px;
+  background: url("../img/sprites/css_sprites.webp") -10px -157px;
 }
 
 .bg-twitter {
   width: 21px;
   height: 17px;
   margin-left: 30px;
-  background: url("../img/sprites/css_sprites.png") -175px -50px;
+  background: url("../img/sprites/css_sprites.webp") -175px -50px;
 }
 
 .bg-XRP {
   width: 29px;
   height: 29px;
-  background: url("../img/sprites/css_sprites.png") -108px -108px;
+  background: url("../img/sprites/css_sprites.webp") -108px -108px;
 }
 
 body {
@@ -921,7 +921,7 @@ body.active {
 .coins-rating-news {
   padding: 30px 0;
   color: #ffffff;
-  background: url(../../img/bluebitcoin.png) no-repeat 80% 70%;
+  background: url(../../img/bluebitcoin.webp) no-repeat 80% 70%;
   background-color: #0099ff;
 }
 
@@ -951,18 +951,73 @@ body.active {
   max-width: 470px;
 }
 
-.coins-rating-news__bottom {
+.coins-rating-news__form {
   margin-top: 27px;
 }
 
+.coins-rating-news__input,
 .coins-rating-news__btn {
   padding: 8px 20px;
-  border: 1px solid #ffffff;
   border-radius: 15px;
   -webkit-transition: 0.2s ease-out;
   -o-transition: 0.2s ease-out;
   transition: 0.2s ease-out;
+}
+
+.coins-rating-news__input {
+  border: 1px solid #ffffff;
   margin-right: 10px;
+}
+
+.coins-rating-news__input:hover {
+  color: #ffffff;
+  background-color: #0099ff;
+}
+
+.coins-rating-news__input:hover::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+.coins-rating-news__input:hover::-moz-placeholder {
+  color: #ffffff;
+}
+
+.coins-rating-news__input:hover:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.coins-rating-news__input:hover::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.coins-rating-news__input:hover::placeholder {
+  color: #ffffff;
+}
+
+.coins-rating-news__input::-webkit-input-placeholder {
+  color: #909090;
+}
+
+.coins-rating-news__input::-moz-placeholder {
+  color: #909090;
+}
+
+.coins-rating-news__input:-ms-input-placeholder {
+  color: #909090;
+}
+
+.coins-rating-news__input::-ms-input-placeholder {
+  color: #909090;
+}
+
+.coins-rating-news__input::placeholder {
+  color: #909090;
+}
+
+.coins-rating-news__btn {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background-color: #0099ff;
 }
 
 .coins-rating-news__btn:hover {
@@ -1216,7 +1271,7 @@ body.active {
 }
 
 @media (max-width: 525px) {
-  .coins-rating-news__bottom {
+  .coins-rating-news__form {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1226,8 +1281,8 @@ body.active {
             flex-direction: column;
   }
 
-  .coins-rating-news__btn:not(:last-of-type) {
-    margin-bottom: 20px;
+  .coins-rating-news__input {
+    margin: 0 0 20px 0;
   }
 }
 
