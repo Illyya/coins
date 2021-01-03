@@ -1146,7 +1146,7 @@ body.active {
   color: #cdcdcd;
 }
 
-table {
+.cursor-default {
   cursor: default;
 }
 
